@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct Patient {
+    var name: String
+    var avatar: Image
+}

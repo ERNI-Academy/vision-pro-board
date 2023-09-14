@@ -12,10 +12,10 @@ struct boardApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-        }.windowStyle(.volumetric)
+        }.windowStyle(.plain)
 
         ImmersiveSpace(id: "ImmersiveSpace") {
-            ImmersiveView()
+            MetallicBall()
         }
     }
 }

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:">
+      location = "self:/Users/david.carmona/Projects/vision-pro-board/vision-pro-board.xcodeproj">
    </FileRef>
 </Workspace>

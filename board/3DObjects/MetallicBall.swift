@@ -1,18 +1,19 @@
-//
-//  MetallicBall.swift
-//  vision-pro-board
-//
-//  Created by David Carmona on 13/9/23.
-//
-
 import SwiftUI
+import RealityKit
+import RealityKitContent
 
 struct MetallicBall: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        RealityView { content in
+            let model = ModelEntity(
+                mesh: .generateSphere(radius: 0.1),
+                materials: [SimpleMaterial(color: .white, isMetallic: true)])
+            content.add(model)
+        }
     }
 }
 
 #Preview {
     MetallicBall()
+        .previewLayout(.sizeThatFits)
 }

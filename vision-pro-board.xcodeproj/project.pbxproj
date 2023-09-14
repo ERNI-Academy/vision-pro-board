@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F3254B9E2AB1C299002B7808 /* MetallicBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3254B9D2AB1C299002B7808 /* MetallicBall.swift */; };
+		F3254BA12AB1C388002B7808 /* MainPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3254BA02AB1C388002B7808 /* MainPanel.swift */; };
+		F3254BA62AB23CE9002B7808 /* PatientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3254BA52AB23CE9002B7808 /* PatientModel.swift */; };
 		F379C9492AA9E52B000A3828 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = F379C9482AA9E52B000A3828 /* RealityKitContent */; };
 		F379C94B2AA9E52B000A3828 /* boardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F379C94A2AA9E52B000A3828 /* boardApp.swift */; };
 		F379C94D2AA9E52B000A3828 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F379C94C2AA9E52B000A3828 /* ContentView.swift */; };
-		F379C94F2AA9E52B000A3828 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F379C94E2AA9E52B000A3828 /* ImmersiveView.swift */; };
 		F379C9512AA9E52B000A3828 /* ImageBasedLight.exr in Resources */ = {isa = PBXBuildFile; fileRef = F379C9502AA9E52B000A3828 /* ImageBasedLight.exr */; };
 		F379C9532AA9E52F000A3828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F379C9522AA9E52F000A3828 /* Assets.xcassets */; };
 		F379C9562AA9E52F000A3828 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F379C9552AA9E52F000A3828 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F379C9432AA9E52B000A3828 /* board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = board.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3254B9D2AB1C299002B7808 /* MetallicBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetallicBall.swift; sourceTree = "<group>"; };
+		F3254BA02AB1C388002B7808 /* MainPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPanel.swift; sourceTree = "<group>"; };
+		F3254BA52AB23CE9002B7808 /* PatientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientModel.swift; sourceTree = "<group>"; };
+		F379C9432AA9E52B000A3828 /* vision-pro-board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vision-pro-board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F379C9472AA9E52B000A3828 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		F379C94A2AA9E52B000A3828 /* boardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boardApp.swift; sourceTree = "<group>"; };
 		F379C94C2AA9E52B000A3828 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		F379C94E2AA9E52B000A3828 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
 		F379C9502AA9E52B000A3828 /* ImageBasedLight.exr */ = {isa = PBXFileReference; lastKnownFileType = file; path = ImageBasedLight.exr; sourceTree = "<group>"; };
 		F379C9522AA9E52F000A3828 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F379C9552AA9E52F000A3828 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -39,6 +43,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F3254B982AB1C1E2002B7808 /* 3DObjects */ = {
+			isa = PBXGroup;
+			children = (
+				F3254B9D2AB1C299002B7808 /* MetallicBall.swift */,
+			);
+			path = 3DObjects;
+			sourceTree = "<group>";
+		};
+		F3254B9F2AB1C36A002B7808 /* Panels */ = {
+			isa = PBXGroup;
+			children = (
+				F3254BA02AB1C388002B7808 /* MainPanel.swift */,
+			);
+			path = Panels;
+			sourceTree = "<group>";
+		};
+		F3254BA32AB239F3002B7808 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F3254BA42AB23CCB002B7808 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3254BA52AB23CE9002B7808 /* PatientModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		F379C93A2AA9E52B000A3828 = {
 			isa = PBXGroup;
 			children = (
@@ -51,7 +86,7 @@
 		F379C9442AA9E52B000A3828 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F379C9432AA9E52B000A3828 /* board.app */,
+				F379C9432AA9E52B000A3828 /* vision-pro-board.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,9 +94,12 @@
 		F379C9452AA9E52B000A3828 /* board */ = {
 			isa = PBXGroup;
 			children = (
+				F3254BA42AB23CCB002B7808 /* Models */,
+				F3254BA32AB239F3002B7808 /* Data */,
+				F3254B9F2AB1C36A002B7808 /* Panels */,
+				F3254B982AB1C1E2002B7808 /* 3DObjects */,
 				F379C94A2AA9E52B000A3828 /* boardApp.swift */,
 				F379C94C2AA9E52B000A3828 /* ContentView.swift */,
-				F379C94E2AA9E52B000A3828 /* ImmersiveView.swift */,
 				F379C9502AA9E52B000A3828 /* ImageBasedLight.exr */,
 				F379C9522AA9E52F000A3828 /* Assets.xcassets */,
 				F379C9542AA9E52F000A3828 /* Preview Content */,
@@ -88,9 +126,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F379C9422AA9E52B000A3828 /* board */ = {
+		F379C9422AA9E52B000A3828 /* vision-pro-board */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F379C9592AA9E52F000A3828 /* Build configuration list for PBXNativeTarget "board" */;
+			buildConfigurationList = F379C9592AA9E52F000A3828 /* Build configuration list for PBXNativeTarget "vision-pro-board" */;
 			buildPhases = (
 				F379C93F2AA9E52B000A3828 /* Sources */,
 				F379C9402AA9E52B000A3828 /* Frameworks */,
@@ -100,12 +138,12 @@
 			);
 			dependencies = (
 			);
-			name = board;
+			name = "vision-pro-board";
 			packageProductDependencies = (
 				F379C9482AA9E52B000A3828 /* RealityKitContent */,
 			);
 			productName = board;
-			productReference = F379C9432AA9E52B000A3828 /* board.app */;
+			productReference = F379C9432AA9E52B000A3828 /* vision-pro-board.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -123,7 +161,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F379C93E2AA9E52B000A3828 /* Build configuration list for PBXProject "board" */;
+			buildConfigurationList = F379C93E2AA9E52B000A3828 /* Build configuration list for PBXProject "vision-pro-board" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -136,7 +174,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F379C9422AA9E52B000A3828 /* board */,
+				F379C9422AA9E52B000A3828 /* vision-pro-board */,
 			);
 		};
 /* End PBXProject section */
@@ -161,7 +199,9 @@
 			files = (
 				F379C94D2AA9E52B000A3828 /* ContentView.swift in Sources */,
 				F379C94B2AA9E52B000A3828 /* boardApp.swift in Sources */,
-				F379C94F2AA9E52B000A3828 /* ImmersiveView.swift in Sources */,
+				F3254B9E2AB1C299002B7808 /* MetallicBall.swift in Sources */,
+				F3254BA12AB1C388002B7808 /* MainPanel.swift in Sources */,
+				F3254BA62AB23CE9002B7808 /* PatientModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +384,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F379C93E2AA9E52B000A3828 /* Build configuration list for PBXProject "board" */ = {
+		F379C93E2AA9E52B000A3828 /* Build configuration list for PBXProject "vision-pro-board" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F379C9572AA9E52F000A3828 /* Debug */,
@@ -353,7 +393,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F379C9592AA9E52F000A3828 /* Build configuration list for PBXNativeTarget "board" */ = {
+		F379C9592AA9E52F000A3828 /* Build configuration list for PBXNativeTarget "vision-pro-board" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F379C95A2AA9E52F000A3828 /* Debug */,
