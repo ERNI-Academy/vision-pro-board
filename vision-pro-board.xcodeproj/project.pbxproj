@@ -10,6 +10,16 @@
 		F3254B9E2AB1C299002B7808 /* MetallicBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3254B9D2AB1C299002B7808 /* MetallicBall.swift */; };
 		F3254BA12AB1C388002B7808 /* MainPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3254BA02AB1C388002B7808 /* MainPanel.swift */; };
 		F3254BA62AB23CE9002B7808 /* PatientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3254BA52AB23CE9002B7808 /* PatientModel.swift */; };
+		F3254BA92AB30260002B7808 /* PatientsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3254BA82AB30260002B7808 /* PatientsStore.swift */; };
+		F3254BAB2AB30DBE002B7808 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3254BAA2AB30DBE002B7808 /* AppStore.swift */; };
+		F3254BAD2AB34021002B7808 /* WelcomePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3254BAC2AB34021002B7808 /* WelcomePanel.swift */; };
+		F3254BB02AB34961002B7808 /* PatientsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3254BAF2AB34961002B7808 /* PatientsList.swift */; };
+		F3254BB22AB34973002B7808 /* PatientRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3254BB12AB34973002B7808 /* PatientRow.swift */; };
+		F3254BB42AB353CC002B7808 /* Patiens.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3254BB32AB353CC002B7808 /* Patiens.swift */; };
+		F3254BB62AB9E731002B7808 /* David.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F3254BB52AB9E731002B7808 /* David.jpeg */; };
+		F3254BB92ABAC5EF002B7808 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3254BB82ABAC5EF002B7808 /* Utils.swift */; };
+		F3254BBF2ABB327B002B7808 /* PanelsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3254BBE2ABB327B002B7808 /* PanelsContainer.swift */; };
+		F3254BC12ABB3728002B7808 /* ResizableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3254BC02ABB3728002B7808 /* ResizableContainer.swift */; };
 		F379C9492AA9E52B000A3828 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = F379C9482AA9E52B000A3828 /* RealityKitContent */; };
 		F379C94B2AA9E52B000A3828 /* boardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F379C94A2AA9E52B000A3828 /* boardApp.swift */; };
 		F379C94D2AA9E52B000A3828 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F379C94C2AA9E52B000A3828 /* ContentView.swift */; };
@@ -22,6 +32,16 @@
 		F3254B9D2AB1C299002B7808 /* MetallicBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetallicBall.swift; sourceTree = "<group>"; };
 		F3254BA02AB1C388002B7808 /* MainPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPanel.swift; sourceTree = "<group>"; };
 		F3254BA52AB23CE9002B7808 /* PatientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientModel.swift; sourceTree = "<group>"; };
+		F3254BA82AB30260002B7808 /* PatientsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientsStore.swift; sourceTree = "<group>"; };
+		F3254BAA2AB30DBE002B7808 /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		F3254BAC2AB34021002B7808 /* WelcomePanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePanel.swift; sourceTree = "<group>"; };
+		F3254BAF2AB34961002B7808 /* PatientsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientsList.swift; sourceTree = "<group>"; };
+		F3254BB12AB34973002B7808 /* PatientRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRow.swift; sourceTree = "<group>"; };
+		F3254BB32AB353CC002B7808 /* Patiens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patiens.swift; sourceTree = "<group>"; };
+		F3254BB52AB9E731002B7808 /* David.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = David.jpeg; sourceTree = "<group>"; };
+		F3254BB82ABAC5EF002B7808 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F3254BBE2ABB327B002B7808 /* PanelsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelsContainer.swift; sourceTree = "<group>"; };
+		F3254BC02ABB3728002B7808 /* ResizableContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableContainer.swift; sourceTree = "<group>"; };
 		F379C9432AA9E52B000A3828 /* vision-pro-board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vision-pro-board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F379C9472AA9E52B000A3828 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		F379C94A2AA9E52B000A3828 /* boardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boardApp.swift; sourceTree = "<group>"; };
@@ -54,7 +74,11 @@
 		F3254B9F2AB1C36A002B7808 /* Panels */ = {
 			isa = PBXGroup;
 			children = (
+				F3254BAE2AB34945002B7808 /* PatientListPanel */,
 				F3254BA02AB1C388002B7808 /* MainPanel.swift */,
+				F3254BAC2AB34021002B7808 /* WelcomePanel.swift */,
+				F3254BBE2ABB327B002B7808 /* PanelsContainer.swift */,
+				F3254BC02ABB3728002B7808 /* ResizableContainer.swift */,
 			);
 			path = Panels;
 			sourceTree = "<group>";
@@ -62,6 +86,7 @@
 		F3254BA32AB239F3002B7808 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				F3254BB32AB353CC002B7808 /* Patiens.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -72,6 +97,32 @@
 				F3254BA52AB23CE9002B7808 /* PatientModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F3254BA72AB3023F002B7808 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				F3254BA82AB30260002B7808 /* PatientsStore.swift */,
+				F3254BAA2AB30DBE002B7808 /* AppStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		F3254BAE2AB34945002B7808 /* PatientListPanel */ = {
+			isa = PBXGroup;
+			children = (
+				F3254BAF2AB34961002B7808 /* PatientsList.swift */,
+				F3254BB12AB34973002B7808 /* PatientRow.swift */,
+			);
+			path = PatientListPanel;
+			sourceTree = "<group>";
+		};
+		F3254BB72ABAC5D3002B7808 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F3254BB82ABAC5EF002B7808 /* Utils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		F379C93A2AA9E52B000A3828 = {
@@ -94,6 +145,8 @@
 		F379C9452AA9E52B000A3828 /* board */ = {
 			isa = PBXGroup;
 			children = (
+				F3254BB72ABAC5D3002B7808 /* Utils */,
+				F3254BA72AB3023F002B7808 /* Store */,
 				F3254BA42AB23CCB002B7808 /* Models */,
 				F3254BA32AB239F3002B7808 /* Data */,
 				F3254B9F2AB1C36A002B7808 /* Panels */,
@@ -102,6 +155,7 @@
 				F379C94C2AA9E52B000A3828 /* ContentView.swift */,
 				F379C9502AA9E52B000A3828 /* ImageBasedLight.exr */,
 				F379C9522AA9E52F000A3828 /* Assets.xcassets */,
+				F3254BB52AB9E731002B7808 /* David.jpeg */,
 				F379C9542AA9E52F000A3828 /* Preview Content */,
 			);
 			path = board;
@@ -186,6 +240,7 @@
 			files = (
 				F379C9532AA9E52F000A3828 /* Assets.xcassets in Resources */,
 				F379C9562AA9E52F000A3828 /* Preview Assets.xcassets in Resources */,
+				F3254BB62AB9E731002B7808 /* David.jpeg in Resources */,
 				F379C9512AA9E52B000A3828 /* ImageBasedLight.exr in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,11 +252,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3254BB42AB353CC002B7808 /* Patiens.swift in Sources */,
+				F3254BB22AB34973002B7808 /* PatientRow.swift in Sources */,
 				F379C94D2AA9E52B000A3828 /* ContentView.swift in Sources */,
+				F3254BAD2AB34021002B7808 /* WelcomePanel.swift in Sources */,
 				F379C94B2AA9E52B000A3828 /* boardApp.swift in Sources */,
+				F3254BAB2AB30DBE002B7808 /* AppStore.swift in Sources */,
 				F3254B9E2AB1C299002B7808 /* MetallicBall.swift in Sources */,
 				F3254BA12AB1C388002B7808 /* MainPanel.swift in Sources */,
+				F3254BA92AB30260002B7808 /* PatientsStore.swift in Sources */,
 				F3254BA62AB23CE9002B7808 /* PatientModel.swift in Sources */,
+				F3254BC12ABB3728002B7808 /* ResizableContainer.swift in Sources */,
+				F3254BBF2ABB327B002B7808 /* PanelsContainer.swift in Sources */,
+				F3254BB02AB34961002B7808 /* PatientsList.swift in Sources */,
+				F3254BB92ABAC5EF002B7808 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

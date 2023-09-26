@@ -7,12 +7,31 @@
 
 import SwiftUI
 
-struct panelsContainer: View {
+struct PanelsContainer: View {
+    let columns: [GridItem] = [
+        GridItem(.flexible(), spacing: 16),
+        GridItem(.flexible(), spacing: 16),
+        GridItem(.flexible(), spacing: 16)
+    ]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ResizableContainer {
+            ScrollView {
+                LazyHGrid(rows: columns, spacing: 16) {
+                    ForEach(0..<10, id: \.self) { index in
+                        VStack {
+                            Text("Widget \(index + 1)")
+                                .frame(width: 200, height: 200)
+                                .glassBackgroundEffect()
+                        }
+                    }
+                }
+                .padding()
+            }
+        }
     }
 }
 
 #Preview {
-    panelsContainer()
+    PanelsContainer().environmentObject(AppStore())
 }

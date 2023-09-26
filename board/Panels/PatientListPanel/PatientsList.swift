@@ -1,18 +1,15 @@
-//
-//  PatientsList.swift
-//  vision-pro-board
-//
-//  Created by David Carmona on 14/9/23.
-//
-
 import SwiftUI
 
 struct PatientsList: View {
+    @EnvironmentObject var patientsStore: PatientsStore
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(patientsStore.patients, id: \.id) { patient in
+            PatientRow(patient: patient)
+        }
     }
 }
 
 #Preview {
-    PatientsList()
+    PatientsList().environmentObject(PatientsStore())
 }

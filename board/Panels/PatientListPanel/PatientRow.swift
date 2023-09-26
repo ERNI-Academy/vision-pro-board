@@ -1,18 +1,30 @@
-//
-//  PatientRow.swift
-//  vision-pro-board
-//
-//  Created by David Carmona on 14/9/23.
-//
-
 import SwiftUI
 
 struct PatientRow: View {
+    @EnvironmentObject var patientsStore: PatientsStore
+    let patient: Patient
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Button(action: {
+                patientsStore.patientSelected = patient
+            }) {
+                VStack {
+                    patient.avatar
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 100, height: 100)
+                        .clipShape(Circle())
+                    
+                    Text(patient.name)
+                        .font(.headline)
+                        .foregroundColor(.primary)
+                }
+                .frame(maxWidth: .infinity)
+            }
     }
 }
 
 #Preview {
-    PatientRow()
+    PatientRow(patient: Patient(id: 0, name: "David Carmona",
+                                avatar: Image("DavidCarmona"), age: 50)).environmentObject(PatientsStore())
 }

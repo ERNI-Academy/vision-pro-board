@@ -7,6 +7,6 @@
 
 import Foundation
 
-final class AppModelData: ObservableObject {
+final class AppStore: ObservableObject {
     @Published var isStarted: Bool = false
 }

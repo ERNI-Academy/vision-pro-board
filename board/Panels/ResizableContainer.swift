@@ -1,29 +1,53 @@
 import SwiftUI
 
-struct SizableContainer<Content: View>: View {
+struct ResizableContainer<Content: View>: View {
     @EnvironmentObject var appStore: AppStore
     @State private var width: CGFloat = 0
     @State private var height: CGFloat = 0
-    var geometry: GeometryProxy
-    var childView: Content
+    let content: Content
+    
+    init(@ViewBuilder content: () -> Content) {
+        self.content = content()
+    }
     
     var body: some View {
-        VStack {
-            childView
-        }
-        .onAppear {
-            calculateInitialPosition(isStarted: appStore.isStarted, geometry: geometry, width: &width, height: &height)
-        }
-        .onChange (of: appStore.isStarted) {
-            withAnimation{
-                changeListPanelSize(isStarted: appStore.isStarted, geometry: geometry, width: &width, height: &height)
+        GeometryReader { geometry in
+            VStack {
+                content
             }
+            .onAppear {
+                if !appStore.isStarted {
+                    width = geometry.size.width
+                    height = geometry.size.height
+                } else {
+                    width = 300
+                    height = geometry.size.height
+                }
+            }
+            .onChange (of: appStore.isStarted) {
+                withAnimation{
+                    if (!appStore.isStarted) { width = geometry.size.width }
+                    else {width = 300}
+                    height = geometry.size.height
+                }
+            }
+            .onChange (of: geometry.size.height) {
+                if (!appStore.isStarted) { width = geometry.size.width }
+                else {width = 300}
+                height = geometry.size.height
+            }
+            .padding()
+            .frame(width: width, height: height)
+            .glassBackgroundEffect()
         }
-        .onChange (of: geometry.size.height) {
-            changeListPanelSize(isStarted: appStore.isStarted, geometry: geometry, width: &width, height: &height)
+    }
+}
+
+struct ResizableContainer_Previews: PreviewProvider {
+    static var previews: some View {
+        ResizableContainer {
+            Text("") // Aquí envolvemos Text("") dentro del cierre.
         }
-        .padding()
-        .frame(width: width, height: height)
-        .glassBackgroundEffect()
+        .environmentObject(AppStore())
     }
 }

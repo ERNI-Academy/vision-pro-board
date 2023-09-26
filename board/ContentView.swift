@@ -1,20 +1,15 @@
-//
-//  ContentView.swift
-//  board
-//
-//  Created by David Carmona on 7/9/23.
-//
-
 import SwiftUI
 import RealityKit
 import RealityKitContent
 
 struct ContentView: View {
+    @EnvironmentObject var appStore: AppStore
+    
     var body: some View {
-        MainPanel()
+        MainPanel(isStarted: $appStore.isStarted)
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView().environmentObject(AppStore())
 }
