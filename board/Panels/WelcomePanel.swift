@@ -36,4 +36,5 @@ struct WelcomePanel: View {
 
 #Preview {
     WelcomePanel(isStarted: .constant(false))
+        .environmentObject(AppStore())
 }

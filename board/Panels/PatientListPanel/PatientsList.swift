@@ -11,5 +11,7 @@ struct PatientsList: View {
 }
 
 #Preview {
-    PatientsList().environmentObject(PatientsStore())
+    PatientsList()
+        .environmentObject(PatientsStore())
+        .environmentObject(AppStore())
 }

@@ -5,14 +5,12 @@ struct MainPanel: View {
     
     var body: some View {
         HStack {
-            ResizableContainer {
+            ResizableContainer(isLateral: isStarted) {
                 if (!isStarted) {
-                    WelcomePanel(isStarted: $isStarted)}
-                else {
-                    PatientsList()
+                    WelcomePanel(isStarted: $isStarted)
                 }
             }
-            PanelsContainer()
+            if (isStarted) {PanelsContainer()}
         }
     }
 }
