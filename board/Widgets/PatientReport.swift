@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct PatientReport: View {
+    @EnvironmentObject var patientsStore: PatientsStore
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(patientsStore.patientSelected.name)
     }
 }
 
 #Preview {
     PatientReport()
+        .environmentObject(PatientsStore())
 }

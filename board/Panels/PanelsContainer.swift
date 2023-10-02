@@ -1,10 +1,3 @@
-//
-//  panelsContainer.swift
-//  vision-pro-board
-//
-//  Created by David Carmona on 20/9/23.
-//
-
 import SwiftUI
 
 struct PanelsContainer: View {
@@ -14,7 +7,7 @@ struct PanelsContainer: View {
         GeometryReader { geometry in
             ScrollView (.vertical, showsIndicators: false) {
                 self.generateContent(in: geometry)
-            }
+            }.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/).frame(maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
         }
     }
 
@@ -48,16 +41,18 @@ struct PanelsContainer: View {
                         return result
                     })
             }
-        }
+        }.frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
     }
 
     func item(for text: String) -> some View {
-        Rectangle()
+        PatientReport()
             .frame(width: 200, height: 200)
             .foregroundColor(.blue)
     }
 }
 
 #Preview {
-    PanelsContainer().environmentObject(AppStore())
+    PanelsContainer()
+        .environmentObject(AppStore())
+        .environmentObject(PatientsStore())
 }

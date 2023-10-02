@@ -20,6 +20,7 @@
 		F3254BB92ABAC5EF002B7808 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3254BB82ABAC5EF002B7808 /* Utils.swift */; };
 		F3254BBF2ABB327B002B7808 /* PanelsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3254BBE2ABB327B002B7808 /* PanelsContainer.swift */; };
 		F3254BC12ABB3728002B7808 /* ResizableContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3254BC02ABB3728002B7808 /* ResizableContainer.swift */; };
+		F370CF5E2AC6EDA300574AA9 /* PatientReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370CF5D2AC6EDA300574AA9 /* PatientReport.swift */; };
 		F379C9492AA9E52B000A3828 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = F379C9482AA9E52B000A3828 /* RealityKitContent */; };
 		F379C94B2AA9E52B000A3828 /* boardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F379C94A2AA9E52B000A3828 /* boardApp.swift */; };
 		F379C94D2AA9E52B000A3828 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F379C94C2AA9E52B000A3828 /* ContentView.swift */; };
@@ -42,6 +43,7 @@
 		F3254BB82ABAC5EF002B7808 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		F3254BBE2ABB327B002B7808 /* PanelsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelsContainer.swift; sourceTree = "<group>"; };
 		F3254BC02ABB3728002B7808 /* ResizableContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableContainer.swift; sourceTree = "<group>"; };
+		F370CF5D2AC6EDA300574AA9 /* PatientReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientReport.swift; sourceTree = "<group>"; };
 		F379C9432AA9E52B000A3828 /* vision-pro-board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vision-pro-board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F379C9472AA9E52B000A3828 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		F379C94A2AA9E52B000A3828 /* boardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boardApp.swift; sourceTree = "<group>"; };
@@ -125,6 +127,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		F370CF5C2AC6E14C00574AA9 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				F370CF5D2AC6EDA300574AA9 /* PatientReport.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
 		F379C93A2AA9E52B000A3828 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +155,7 @@
 		F379C9452AA9E52B000A3828 /* board */ = {
 			isa = PBXGroup;
 			children = (
+				F370CF5C2AC6E14C00574AA9 /* Widgets */,
 				F3254BB72ABAC5D3002B7808 /* Utils */,
 				F3254BA72AB3023F002B7808 /* Store */,
 				F3254BA42AB23CCB002B7808 /* Models */,
@@ -256,6 +267,7 @@
 				F3254BB22AB34973002B7808 /* PatientRow.swift in Sources */,
 				F379C94D2AA9E52B000A3828 /* ContentView.swift in Sources */,
 				F3254BAD2AB34021002B7808 /* WelcomePanel.swift in Sources */,
+				F370CF5E2AC6EDA300574AA9 /* PatientReport.swift in Sources */,
 				F379C94B2AA9E52B000A3828 /* boardApp.swift in Sources */,
 				F3254BAB2AB30DBE002B7808 /* AppStore.swift in Sources */,
 				F3254B9E2AB1C299002B7808 /* MetallicBall.swift in Sources */,

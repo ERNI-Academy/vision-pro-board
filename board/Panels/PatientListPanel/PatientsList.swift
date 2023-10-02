@@ -7,6 +7,7 @@ struct PatientsList: View {
         List(patientsStore.patients, id: \.id) { patient in
             PatientRow(patient: patient)
         }
+        .padding()
     }
 }
 
