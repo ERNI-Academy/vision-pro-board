@@ -4,7 +4,7 @@ struct MainPanel: View {
     @Binding var isStarted: Bool
     
     var body: some View {
-        if (!isStarted) {
+        if (isStarted) {
             WelcomePanel(isStarted: $isStarted)
                 .glassBackgroundEffect()
                 .padding()
@@ -13,7 +13,7 @@ struct MainPanel: View {
                 VStack {
                     PatientsList()
                 }
-                .frame(maxWidth: isStarted ? 300 : /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                .frame(maxWidth: !isStarted ? 300 : /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                 .frame(maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                 .glassBackgroundEffect()
                 PanelsContainer()

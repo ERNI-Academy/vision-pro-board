@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F314C1592ACAD8FB00CF344D /* WidgetsIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F314C1582ACAD8FB00CF344D /* WidgetsIndex.swift */; };
 		F3254B9E2AB1C299002B7808 /* MetallicBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3254B9D2AB1C299002B7808 /* MetallicBall.swift */; };
 		F3254BA12AB1C388002B7808 /* MainPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3254BA02AB1C388002B7808 /* MainPanel.swift */; };
 		F3254BA62AB23CE9002B7808 /* PatientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3254BA52AB23CE9002B7808 /* PatientModel.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F314C1582ACAD8FB00CF344D /* WidgetsIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetsIndex.swift; sourceTree = "<group>"; };
 		F3254B9D2AB1C299002B7808 /* MetallicBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetallicBall.swift; sourceTree = "<group>"; };
 		F3254BA02AB1C388002B7808 /* MainPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPanel.swift; sourceTree = "<group>"; };
 		F3254BA52AB23CE9002B7808 /* PatientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientModel.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				F370CF5D2AC6EDA300574AA9 /* PatientReport.swift */,
+				F314C1582ACAD8FB00CF344D /* WidgetsIndex.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -155,12 +158,12 @@
 		F379C9452AA9E52B000A3828 /* board */ = {
 			isa = PBXGroup;
 			children = (
-				F370CF5C2AC6E14C00574AA9 /* Widgets */,
 				F3254BB72ABAC5D3002B7808 /* Utils */,
 				F3254BA72AB3023F002B7808 /* Store */,
 				F3254BA42AB23CCB002B7808 /* Models */,
 				F3254BA32AB239F3002B7808 /* Data */,
 				F3254B9F2AB1C36A002B7808 /* Panels */,
+				F370CF5C2AC6E14C00574AA9 /* Widgets */,
 				F3254B982AB1C1E2002B7808 /* 3DObjects */,
 				F379C94A2AA9E52B000A3828 /* boardApp.swift */,
 				F379C94C2AA9E52B000A3828 /* ContentView.swift */,
@@ -275,6 +278,7 @@
 				F3254BA92AB30260002B7808 /* PatientsStore.swift in Sources */,
 				F3254BA62AB23CE9002B7808 /* PatientModel.swift in Sources */,
 				F3254BC12ABB3728002B7808 /* ResizableContainer.swift in Sources */,
+				F314C1592ACAD8FB00CF344D /* WidgetsIndex.swift in Sources */,
 				F3254BBF2ABB327B002B7808 /* PanelsContainer.swift in Sources */,
 				F3254BB02AB34961002B7808 /* PatientsList.swift in Sources */,
 				F3254BB92ABAC5EF002B7808 /* Utils.swift in Sources */,

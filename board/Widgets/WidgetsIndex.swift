@@ -1,8 +1,7 @@
-//
-//  WidgetsIndex.swift
-//  vision-pro-board
-//
-//  Created by David Carmona on 2/10/23.
-//
-
 import Foundation
+import SwiftUI
+
+let WidgetsIndex = [
+    Widget(view: AnyView(PatientReport()), width: 400, height: 500),
+    Widget(view: AnyView(PatientReport()), width: 200, height: 500)
+]
