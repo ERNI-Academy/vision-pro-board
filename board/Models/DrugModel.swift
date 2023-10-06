@@ -1,8 +1,9 @@
-//
-//  DrugModel.swift
-//  vision-pro-board
-//
-//  Created by David Carmona on 6/10/23.
-//
-
 import Foundation
+import SwiftUI
+
+struct Drug {
+    var id: Int
+    var name: String
+    var isSelected: Bool
+    var image: Image
+}

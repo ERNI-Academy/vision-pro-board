@@ -1,8 +1,32 @@
-//
-// Copyright © 2022 Swift Charts Examples.
-// Open Source - MIT License
-
 import Foundation
+
+func date(year: Int, month: Int, day: Int = 1, hour: Int = 0, minutes: Int = 0, seconds: Int = 0) -> Date {
+    Calendar.current.date(from: DateComponents(year: year, month: month, day: day, hour: hour, minute: minutes, second: seconds)) ?? Date()
+}
+
+enum Constants {
+    static let previewChartHeight: CGFloat = 100
+    static let detailChartHeight: CGFloat = 300
+}
+
+extension Date {
+    static var startOfDay: Date {
+        Calendar.current.startOfDay(for: .now)
+    }
+}
+
+extension Date {
+    func nearestHour() -> Date? {
+        var components = NSCalendar.current.dateComponents([.minute, .second, .nanosecond], from: self)
+        let minute = components.minute ?? 0
+        let second = components.second ?? 0
+        let nanosecond = components.nanosecond ?? 0
+        components.minute = minute >= 30 ? 60 - minute : -minute
+        components.second = -second
+        components.nanosecond = -nanosecond
+        return Calendar.current.date(byAdding: components, to: self)
+    }
+}
 
 enum HealthData {
 	struct HeartRate: Identifiable {

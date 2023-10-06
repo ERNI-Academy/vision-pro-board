@@ -16,7 +16,7 @@ struct PanelsContainer: View {
         return ZStack(alignment: .topLeading) {
             ForEach(WidgetsIndex, id: \.id) { widget in
                 self.item(for: widget.view, width: widget.width, height: widget.height)
-                    .padding([.horizontal, .vertical], 4)
+                    .padding([.horizontal, .vertical], 20)
                     .alignmentGuide(.leading , computeValue: { d in
                         if (abs(width - d.width) > g.size.width) {
                             width = 0

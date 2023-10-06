@@ -11,6 +11,7 @@ struct boardApp: App {
                 .environmentObject(appStore)
                 .environmentObject(patientsStore)
         }.windowStyle(.plain)
+            .defaultSize(width: 2000, height: 1000)
 
         ImmersiveSpace(id: "ImmersiveSpace") {
             MetallicBall()
