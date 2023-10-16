@@ -28,6 +28,7 @@
 		F3254BB62AB9E731002B7808 /* David.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F3254BB52AB9E731002B7808 /* David.jpeg */; };
 		F3254BB92ABAC5EF002B7808 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3254BB82ABAC5EF002B7808 /* Utils.swift */; };
 		F3254BBF2ABB327B002B7808 /* PanelsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3254BBE2ABB327B002B7808 /* PanelsContainer.swift */; };
+		F34CB9BE2AD9232F00BC482E /* Bone.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34CB9BD2AD9232F00BC482E /* Bone.swift */; };
 		F370CF5E2AC6EDA300574AA9 /* PatientReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370CF5D2AC6EDA300574AA9 /* PatientReport.swift */; };
 		F379C9492AA9E52B000A3828 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = F379C9482AA9E52B000A3828 /* RealityKitContent */; };
 		F379C94B2AA9E52B000A3828 /* boardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F379C94A2AA9E52B000A3828 /* boardApp.swift */; };
@@ -35,6 +36,7 @@
 		F379C9512AA9E52B000A3828 /* ImageBasedLight.exr in Resources */ = {isa = PBXBuildFile; fileRef = F379C9502AA9E52B000A3828 /* ImageBasedLight.exr */; };
 		F379C9532AA9E52F000A3828 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F379C9522AA9E52F000A3828 /* Assets.xcassets */; };
 		F379C9562AA9E52F000A3828 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F379C9552AA9E52F000A3828 /* Preview Assets.xcassets */; };
+		F3B1646A2AD6E15F00F9A44B /* Radiography.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B164692AD6E15F00F9A44B /* Radiography.swift */; };
 		F3FA40792AD05AD3004911DC /* ListElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FA40782AD05AD3004911DC /* ListElement.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,7 @@
 		F3254BB52AB9E731002B7808 /* David.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = David.jpeg; sourceTree = "<group>"; };
 		F3254BB82ABAC5EF002B7808 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		F3254BBE2ABB327B002B7808 /* PanelsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelsContainer.swift; sourceTree = "<group>"; };
+		F34CB9BD2AD9232F00BC482E /* Bone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bone.swift; sourceTree = "<group>"; };
 		F370CF5D2AC6EDA300574AA9 /* PatientReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientReport.swift; sourceTree = "<group>"; };
 		F379C9432AA9E52B000A3828 /* vision-pro-board.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vision-pro-board.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F379C9472AA9E52B000A3828 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		F379C9502AA9E52B000A3828 /* ImageBasedLight.exr */ = {isa = PBXFileReference; lastKnownFileType = file; path = ImageBasedLight.exr; sourceTree = "<group>"; };
 		F379C9522AA9E52F000A3828 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F379C9552AA9E52F000A3828 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F3B164692AD6E15F00F9A44B /* Radiography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Radiography.swift; sourceTree = "<group>"; };
 		F3FA40782AD05AD3004911DC /* ListElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				F3254B9D2AB1C299002B7808 /* MetallicBall.swift */,
+				F34CB9BD2AD9232F00BC482E /* Bone.swift */,
 			);
 			path = 3DObjects;
 			sourceTree = "<group>";
@@ -157,6 +162,7 @@
 				F314C1582ACAD8FB00CF344D /* WidgetsIndex.swift */,
 				F314C15A2ACB509D00CF344D /* PatientHeartBeat.swift */,
 				F302D1AB2AD044510098A8BF /* DrugsList.swift */,
+				F3B164692AD6E15F00F9A44B /* Radiography.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -311,6 +317,7 @@
 				F379C94B2AA9E52B000A3828 /* boardApp.swift in Sources */,
 				F3254BAB2AB30DBE002B7808 /* AppStore.swift in Sources */,
 				F3254B9E2AB1C299002B7808 /* MetallicBall.swift in Sources */,
+				F3B1646A2AD6E15F00F9A44B /* Radiography.swift in Sources */,
 				F3254BA12AB1C388002B7808 /* MainPanel.swift in Sources */,
 				F3FA40792AD05AD3004911DC /* ListElement.swift in Sources */,
 				F314C1612ACB59D400CF344D /* HealthData.swift in Sources */,
@@ -322,6 +329,7 @@
 				F302D1B02AD045280098A8BF /* DrugModel.swift in Sources */,
 				F3254BB02AB34961002B7808 /* PatientsList.swift in Sources */,
 				F3254BB92ABAC5EF002B7808 /* Utils.swift in Sources */,
+				F34CB9BE2AD9232F00BC482E /* Bone.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

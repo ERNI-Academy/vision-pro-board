@@ -1,30 +1,86 @@
-//
-//  DrugsList.swift
-//  vision-pro-board
-//
-//  Created by David Carmona on 6/10/23.
-//
-
 import SwiftUI
 
 struct DrugsList: View {
+    @State var drugsList = DrugList
+    @State private var value = 0
+    @State private var filterText = ""
     
-    var drugsList: [Drug]
+    func resetValues() {
+        for index in drugsList.indices {
+            drugsList[index].value = 0
+        }
+    }
+    
+    func incrementStep(for drug: Drug) {
+        if let index = drugsList.firstIndex(where: { $0.id == drug.id }) {
+            drugsList[index].value += 1
+        }
+    }
+    
+    func decrementStep(for drug: Drug) {
+        if let index = drugsList.firstIndex(where: { $0.id == drug.id }) {
+            drugsList[index].value -= 1
+        }
+    }
+    
+    var filteredDrugs: [Drug] {
+        if filterText.isEmpty {
+            return drugsList
+        } else {
+            return drugsList.filter { $0.name.localizedCaseInsensitiveContains(filterText) }
+        }
+    }
     
     var body: some View {
         VStack {
+            HStack (alignment: .top) {
+                Text("Filter").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/).padding()
+                TextField("", text: $filterText)
+                    .padding()
+                    .background(Color.white)
+                    .foregroundColor(.black)
+                    .cornerRadius(30)
+            }
+            .padding(20)
             ScrollView(.vertical) {
-                HStack {
-                    item(for: Image(systemName: "cross.case.fill"), name: "Flogoprofen", specifications: "500mg").padding()
-                    Toggle(isOn: .constant(false)) {
-                    }.padding()
+                ForEach(filteredDrugs, id: \.id) { drug in
+                    HStack (alignment: .bottom) {
+                        item(for: drug.image, name: drug.name, specifications: "500mg", value: drug.value)
+                            .padding()
+                        Spacer()
+                        Stepper("", value: Binding<Int>(
+                            get: { drug.value },
+                            set: { newValue in
+                                let clampedValue = min(max(0, newValue), 10)
+                                if clampedValue != drug.value {
+                                    if clampedValue > drug.value {
+                                        incrementStep(for: drug)
+                                    } else {
+                                        decrementStep(for: drug)
+                                    }
+                                }
+                            }
+                        ), in: 0...10)
+                        .padding()
+                    }.background(drug.value > 0 ? Color.black.opacity(0.2) : Color.clear)
                 }
             }
+            Button(action: {
+                resetValues() // Llama a la función para restablecer los valores
+            }) {
+                Text("Send")
+                    .font(.title)
+                    .padding()
+                    .foregroundColor(.white)
+                    .cornerRadius(30)
+            }
+            .padding(.bottom, 20)
         }
+        .glassBackgroundEffect()
     }
 }
 
-func item(for image: Image, name: String, specifications: String) -> some View {
+func item(for image: Image, name: String, specifications: String, value: Int) -> some View {
     HStack {
         image
             .resizable()
@@ -33,11 +89,11 @@ func item(for image: Image, name: String, specifications: String) -> some View {
         VStack (alignment: .leading) {
             Text(name).font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             Text(specifications).font(.subheadline)
+            Text("\(value) every 8 hours")
         }
-        Spacer()
-        }
+    }
 }
 
 #Preview {
-    DrugsList(drugsList: [Drug(id: 0, name: "Flogoprofen", isSelected: false, image: Image(systemName: "cross.case.fill"))])
+    DrugsList()
 }

@@ -13,8 +13,8 @@ struct boardApp: App {
         }.windowStyle(.plain)
             .defaultSize(width: 2000, height: 1000)
 
-        ImmersiveSpace(id: "ImmersiveSpace") {
-            MetallicBall()
+        ImmersiveSpace(id: "Radiography") {
+            Bone()
         }
     }
 }
