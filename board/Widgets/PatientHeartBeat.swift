@@ -9,6 +9,19 @@ struct PatientHeartBeat: View {
     @State private var interpolationMethod: ChartInterpolationMethod = .cardinal
     @State private var chartColor: Color = .pink
     
+    func getECGData() -> [Double] {
+        // Define la forma de la onda del ECG
+        let ecgWaveform = [8.8, 0.1, 0.2, 0.3, 0.2, 0.1, 0.0, -0.1, -0.2, -0.1, 0.0, 0.4, 0.8, 1.2, 0.8, 0.4, 0.0, -0.1, -0.2, -0.1, 0.0]
+        
+        // Repite la forma de la onda para llenar los datos
+        var data: [Double] = []
+        for _ in 0..<100 {
+            data.append(contentsOf: ecgWaveform)
+        }
+        
+        return data
+    }
+    
     var body: some View {
         if isOverview {
             chartAndLabels
@@ -25,7 +38,9 @@ struct PatientHeartBeat: View {
     }
     
     private var chartAndLabels: some View {
-        VStack(alignment: .leading) {
+        let timer = Timer.publish(every: 0.0001, on: .main, in: .common).autoconnect()
+        
+        return VStack(alignment: .leading) {
             Text("Sinus Rhythm")
                 .font(.system(.title2, design: .rounded))
                 .fontWeight(.bold)
@@ -42,6 +57,11 @@ struct PatientHeartBeat: View {
                 Text("68 BPM Average")
                     .foregroundColor(.secondary)
             }
+        }
+        .onReceive(timer) { _ in
+            // Elimina el primer elemento y añade un nuevo dato al final
+            data.append(data.first!)
+            data.removeFirst()
         }
         .frame(height: Constants.detailChartHeight)
     }
